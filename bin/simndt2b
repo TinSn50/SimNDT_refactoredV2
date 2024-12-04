@@ -1,0 +1,4 @@
+#!/bin/bash
+
+TOP=/home/sbosse/proj/SimNDT2b
+python2 $TOP/src/main.py $@

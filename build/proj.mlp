@@ -1,0 +1,46 @@
+FILES:
+
+
+--- CORE ---
+
+@ + SimNDT/core/boundary.py
+@ + SimNDT/core/constants.py
+@ + SimNDT/core/checkSimulation.py
+@ + SimNDT/core/inspectionMethods.py
+@ + SimNDT/core/inspectionSetup.py
+@ + SimNDT/core/material.py
+@ + SimNDT/core/materialLibrary.py
+@ + SimNDT/core/receivers.py
+@ + SimNDT/core/scenario.py
+@ + SimNDT/core/signal.py
+@ + SimNDT/core/simPack.py
+@ + SimNDT/core/simulation.py
+@ + SimNDT/core/transducer.py
+
+
+@ + SimNDT/run_setup/engineController.py
+@ + SimNDT/run_setup/runSimulator.py
+@ + SimNDT/run_setup/snapshots.py
+--- ENGINE ---
+
+@ + SimNDT/engine/efit2d.py
+@ + SimNDT/engine/engineBase.py
+@ + SimNDT/engine/snapshots.py
+
+@ + main.py
+
+@ bug-report
+
+
+PROJECT:
+  PROJ_PATH $HOME/proj/SimNDT2b/
+  SRC_PATH $PROJ_PATH/src
+  
+COMMANDS:
+  OPEN ALL
+  CLOSE ALL
+  BUILD ALL
+  BUILD CLEAN
+  BUILD INSTALL
+  BUILD VERSION
+

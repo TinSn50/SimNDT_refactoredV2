@@ -1,0 +1,109 @@
+{
+  "Scenario": {
+    "Width": 500,
+    "Height": 500,
+    "Pixel_mm": 1.0,
+    "Label": 0
+  },
+  "Materials": [
+    {
+      "Name": "aluminium",
+      "Label": 0
+    },
+    {
+      "Name": "steel",
+      "Label": 40
+    },
+    {
+      "Name": "air",
+      "Label": 160
+    }
+  ],
+  "Boundaries": [
+    {
+      "Name": "Top",
+      "Type": "Air"
+    },
+    {
+      "Name": "Bottom",
+      "Type": "Air"
+    },
+    {
+      "Name": "Left",
+      "Type": "Air"
+    },
+    {
+      "Name": "Right",
+      "Type": "Air"
+    }
+  ],
+  "Transducers": {
+    "SizePixel": 62.0,
+    "Name": "emisor",
+    "PZT": 0,
+    "PointSource": 0,
+    "CenterOffset": 0.0,
+    "BorderOffset": 30.0,
+    "Field": 0,
+    "Window": 0,
+    "Location": "Top",
+    "Size": 10.0
+  },
+  "GeometricObjects": [
+    {
+      "x0": 250.0,
+      "y0": 250.0,
+      "a": 20.0,
+      "b": 20.0,
+      "Name": "ellipse",
+      "Label": 160,
+      "theta": 0.0
+    }
+  ],
+  "Inspection": {
+    "Location": "Top",
+    "Method": "Transmission",
+    "Name": "Transmission"
+  },
+  "Source": {
+    "Pressure": 1,
+    "Longitudinal": 1,
+    "Displacement": 0,
+    "Shear": 0
+  },
+  "Signal": {
+    "Frequency": 50000.0,
+    "N_Cycles": 3,
+    "Name": "GaussianSine",
+    "Amplitude": 2.0
+  },
+  "Simulation": {
+    "PointCycle": 10,
+    "SimulationTime": 500e-6,
+    "TimeScale": 1.0,
+    "MaxFreq": 300000.0,
+    "Order": 2,
+    "Device":"CPU"
+  },
+  "Receivers": {
+    "Method": "Transmission"
+  },
+  "Snapshot": {
+    "Step": 100, 
+    "Save_filepath": "./simdata/tmp2",
+    "Filename": "numpy",
+    "Extension": ".png",
+    "dB": 60,
+    "Color": 0,
+    "Field": 3,
+    "enableFields": false,
+    "enableNumPy": true,
+    "enableSignals": true,
+    "enableImages": false,
+    "enableVolume": true,
+    "enableView": false,
+    "sensorShape": [],
+    "sensorPlacement": [],
+    "sensorSize": 0
+  }
+}
